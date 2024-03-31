@@ -6,11 +6,11 @@
   "license": "MIT",
   "scripts": {
     "start": "node index",
-    "dev": "nodemon index",
-    "seed": "node utils/seed"
+    "dev": "nodemon index"
   },
   "dependencies": {
     "express": "^4.17.1",
+    "moment": "^2.30.1",
     "mongoose": "^7.0.2"
   },
   "devDependencies": {

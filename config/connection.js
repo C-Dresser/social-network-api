@@ -1,13 +1,5 @@
-const { connect, connection } = require('mongoose');
+const mongoose = require('mongoose');
 
-const connectionString =
-    process.env.MONGODB_URI || 'mongodb://localhost/social-network';
+mongoose.connect('mongodb://127.0.0.1:27017/socialmedia');
 
-connect(connectionString, 
-).then(() =>
-    console.log('Connected to the database!'))
-    .catch(err =>
-        console.error(err));
-
-module.exports = connection;
-
+module.exports = mongoose.connection;
